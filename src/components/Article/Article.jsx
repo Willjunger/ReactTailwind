@@ -8,7 +8,7 @@ const Article = ({title, text, tags, image, alt}) =>{
         </div>
         <div className="grid gap-1">
             {
-                text.map((content, index) => <p className="text-alura-200 dark:text-gray-400" key={index}>{content}</p>)
+                text.map((content, index) => <p className="text-alura-200 dark:text-gray-400 line-clamp-2 sm:line-clamp-none" key={index}>{content}</p>)
             }
         </div>
         {image && <img className="p-4" src={image}/>}
